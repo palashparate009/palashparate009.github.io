@@ -3,275 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta
-    name="description"
-    content="Palash Parate - Independent Game & App Developer."
-  />
-
-  <title>Palash Parate | Game & App Developer</title>
-
+  <meta name="description" content="Palash Parate — Unity Game Developer specializing in gameplay systems, multiplayer, AI, backend integrations and mobile optimization." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Palash Parate | Unity Game Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-  <!-- =========================
-       HEADER / NAVIGATION
-  ========================== -->
-  <header class="site-header">
-    <div class="container nav-wrap">
-
-      <a class="brand" href="#home">Palash Parate</a>
-
-      <nav class="nav">
+  <div class="noise"></div>
+  <header class="nav-shell">
+    <nav class="nav container">
+      <a class="brand" href="#home"><span class="brand-mark">PP</span><span>Palash Parate</span></a>
+      <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#apps">Apps</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </nav>
-
-    </div>
+        <a class="nav-cta" href="assets/Palash-Parate-Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a>
+      </div>
+    </nav>
   </header>
 
-
   <main>
-
-    <!-- =========================
-         HERO SECTION
-    ========================== -->
-    <section id="home" class="hero">
-      <div class="container hero-grid">
-
-        <div>
-
-          <p class="eyebrow">
-            INDEPENDENT GAME & APP DEVELOPER
-          </p>
-
-          <h1>
-            Building polished interactive experiences for mobile.
-          </h1>
-
-          <p class="hero-copy">
-            I’m Palash Parate, a game developer focused on gameplay systems,
-            responsive user experiences, optimization, and reliable mobile
-            applications.
-          </p>
-
-          <div class="hero-actions">
-
-            <a class="btn primary" href="#apps">
-              View My Apps
-            </a>
-
-            <a class="btn secondary" href="#contact">
-              Contact Me
-            </a>
-
-          </div>
-
+    <section class="hero container" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> UNITY GAMEPLAY DEVELOPER</div>
+        <h1>I build <span>gameplay systems</span> players can feel.</h1>
+        <p class="hero-text">Unity Game Developer with 3+ years of professional experience creating mobile and multiplayer games, real-time systems, AI gameplay, backend integrations and polished player experiences.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore my work <span>→</span></a>
+          <a class="btn secondary" href="assets/Palash-Parate-Resume.pdf" target="_blank" rel="noreferrer">View resume</a>
         </div>
-
-
-        <!-- Developer Information Card -->
-        <div class="hero-card">
-
-          <div class="code-line">
-            <span>role</span> = "Game Developer"
-          </div>
-
-          <div class="code-line">
-            <span>engine</span> = "Unity"
-          </div>
-
-          <div class="code-line">
-            <span>language</span> = "C#"
-          </div>
-
-          <div class="code-line">
-            <span>focus</span> = "Mobile & Interactive Experiences"
-          </div>
-
+        <div class="social-row">
+          <a href="https://github.com/palashparate009" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/palash-parate" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <a href="mailto:palashparate009@gmail.com">Email ↗</a>
         </div>
+      </div>
 
+      <div class="hero-visual reveal delay-1" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="engine-card">
+          <div class="window-bar"><span></span><span></span><span></span><b>Gameplay.cs</b></div>
+          <pre><code><span class="c-purple">public class</span> <span class="c-blue">GameDeveloper</span>
+{
+  <span class="c-purple">string</span> engine = <span class="c-green">"Unity"</span>;
+  <span class="c-purple">string</span>[] focus = {
+    <span class="c-green">"Gameplay"</span>, <span class="c-green">"Multiplayer"</span>,
+    <span class="c-green">"AI"</span>, <span class="c-green">"Optimization"</span>
+  };
+
+  <span class="c-blue">void</span> Build()
+  {
+    Ship(<span class="c-green">"polished experiences"</span>);
+  }
+}</code></pre>
+        </div>
+        <div class="floating-tag tag-one">Photon</div>
+        <div class="floating-tag tag-two">Beamable</div>
+        <div class="floating-tag tag-three">C#</div>
       </div>
     </section>
 
+    <section class="metrics container reveal">
+      <div><strong>3+</strong><span>Years professional experience</span></div>
+      <div><strong>1M+</strong><span>Downloads on contributed title</span></div>
+      <div><strong>2D / 3D</strong><span>Unity gameplay development</span></div>
+      <div><strong>Mobile + PC</strong><span>Target platforms</span></div>
+    </section>
 
-    <!-- =========================
-         ABOUT SECTION
-    ========================== -->
-    <section id="about" class="section">
+    <section class="section container" id="about">
+      <div class="section-head reveal"><p class="kicker">01 / ABOUT</p><h2>Developer mindset.<br><span>Player-first execution.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I’m a Unity Game Developer focused on turning game ideas into scalable, responsive systems. My work spans gameplay architecture, AI, multiplayer, live backend integrations, UI flows, debugging and mobile performance.</p>
+          <p>I enjoy owning systems end-to-end: understanding the player experience, structuring clean code, integrating services, profiling bottlenecks and refining the final game feel with cross-functional teams.</p>
+        </div>
+        <div class="principles reveal delay-1">
+          <article><span>01</span><div><h3>Gameplay Architecture</h3><p>Modular systems designed to stay readable, extensible and production-ready.</p></div></article>
+          <article><span>02</span><div><h3>Multiplayer & Backend</h3><p>Real-time player connectivity, service integrations and asynchronous gameplay systems.</p></div></article>
+          <article><span>03</span><div><h3>Performance</h3><p>Profiling, Addressables, memory-conscious development and mobile optimization.</p></div></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section experience-bg" id="experience">
       <div class="container">
-
-        <p class="section-label">
-          ABOUT
-        </p>
-
-        <h2>About Me</h2>
-
-        <p class="section-copy">
-          I am a professional Unity Game Developer with experience building
-          gameplay systems, UI flows, mobile features, backend-connected
-          experiences, and performance-conscious applications.
-          I enjoy creating clean, responsive, player-focused products
-          and continuously improving the quality of the experiences I build.
-        </p>
-
+        <div class="section-head reveal"><p class="kicker">02 / EXPERIENCE</p><h2>Production experience<br><span>across shipped games.</span></h2></div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="time-meta"><span>APR 2024 — PRESENT</span><b>Gameshastra · Hyderabad</b></div>
+            <div class="time-content">
+              <div class="role-line"><h3>Unity Developer / Game Programmer</h3><span>Full-time</span></div>
+              <p>Building gameplay features and production systems for commercial mobile games, including multiplayer cricket and slot titles.</p>
+              <ul>
+                <li>Architected gameplay mechanics for a real-time multiplayer cricket game, including AI bots and Ghost Bot systems using recorded player data.</li>
+                <li>Integrated real-time PvP systems and Beamable backend services with Socket.IO and Photon.</li>
+                <li>Implemented Unity Addressables to improve asset loading and reduce memory usage across game modules.</li>
+                <li>Contributed UI/UX improvements to Desi Beats and APIs/gameplay debugging for Spin Roll Go.</li>
+              </ul>
+              <div class="chips"><span>Unity</span><span>C#</span><span>Lua</span><span>Beamable</span><span>Socket.IO</span><span>Photon</span><span>Addressables</span></div>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="time-meta"><span>OCT 2023 — APR 2024</span><b>Gameshastra · Hyderabad</b></div>
+            <div class="time-content">
+              <div class="role-line"><h3>Intern Game Programmer</h3><span>Internship</span></div>
+              <p>Worked on gameplay foundations, AI systems, mission/game-state logic and game feel across production projects.</p>
+              <ul>
+                <li>Integrated AI, mission logic, combat mechanics and NPC behavior into scalable gameplay architecture.</li>
+                <li>Built vehicle controls, progression mechanics, event triggers and game-state systems.</li>
+                <li>Fine-tuned slot gameplay logic in Lua and implemented SFX for stronger game feel.</li>
+              </ul>
+              <div class="chips"><span>Unity</span><span>C#</span><span>Lua</span><span>AI</span><span>Game State</span></div>
+            </div>
+          </article>
+        </div>
       </div>
-
     </section>
 
+    <section class="section container" id="projects">
+      <div class="section-head reveal"><p class="kicker">03 / SELECTED WORK</p><h2>Games & systems<br><span>I’ve helped bring to life.</span></h2></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-index">01</div>
+          <div class="project-icon">🏏</div>
+          <div class="project-body"><span class="project-label">COMMERCIAL / MULTIPLAYER</span><h3>Real-time Multiplayer Cricket</h3><p>Gameplay architecture for a multiplayer cricket experience with AI bots, Ghost Bot asynchronous play, PvP connectivity and backend integration.</p><div class="chips"><span>Unity</span><span>C#</span><span>Beamable</span><span>Socket.IO</span><span>Photon</span><span>AI</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-index">02</div><div class="project-icon">🎵</div>
+          <div class="project-body"><span class="project-label">SHIPPED MOBILE TITLE</span><h3>Desi Beats</h3><p>Contributed UI design improvements and user-experience optimization to a commercially shipped mobile game with 1M+ downloads.</p><div class="chips"><span>Unity</span><span>UI/UX</span><span>Mobile</span></div></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-index">03</div><div class="project-icon">🎲</div>
+          <div class="project-body"><span class="project-label">SHIPPED MOBILE TITLE</span><h3>Spin Roll Go</h3><p>Designed API integrations and debugged gameplay systems to improve stability and responsiveness across core game flows.</p><div class="chips"><span>Unity</span><span>REST APIs</span><span>Debugging</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-index">04</div><div class="project-icon">🐯</div>
+          <div class="project-body"><span class="project-label">PERSONAL PROJECT</span><h3>Bagh-Chal</h3><p>Independently developed a complete asymmetric turn-based strategy game with AI logic, grid interaction, move validation, win conditions and game flow.</p><div class="chips"><span>Unity</span><span>C#</span><span>AI State Machines</span><span>Grid Systems</span></div><a class="project-link" href="https://github.com/palashparate009/BagChal_Main" target="_blank" rel="noreferrer">View source on GitHub ↗</a></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-index">05</div><div class="project-icon">🎰</div>
+          <div class="project-body"><span class="project-label">COMMERCIAL / CASUAL</span><h3>Slot Game Systems</h3><p>Engineered slot mechanics using Lua and C#, including gameplay logic, architecture, audiovisual feedback and responsive UI/game-flow systems.</p><div class="chips"><span>Unity</span><span>Lua</span><span>C#</span><span>Gameplay Systems</span></div></div>
+        </article>
+      </div>
+    </section>
 
-    <!-- =========================
-         APPS & PROJECTS SECTION
-    ========================== -->
-    <section id="apps" class="section alt">
-
+    <section class="section skills-section" id="skills">
       <div class="container">
-
-        <p class="section-label">
-          APPS & PROJECTS
-        </p>
-
-        <h2>My Work</h2>
-
-
-        <div class="cards">
-
-          <!-- Game Development -->
-          <article class="card">
-
-            <div class="app-icon">🎮</div>
-
-            <h3>
-              Games & Interactive Experiences
-            </h3>
-
-            <p>
-              Gameplay systems, UI, multiplayer integrations,
-              optimization, and mobile game development using Unity.
-            </p>
-
-          </article>
-
-
-          <!-- Mobile Apps -->
-          <article class="card">
-
-            <div class="app-icon">📱</div>
-
-            <h3>
-              Mobile Applications
-            </h3>
-
-            <p>
-              Mobile-first applications with a focus on usability,
-              performance, privacy, and a clean user experience.
-            </p>
-
-          </article>
-
-
-          <!-- Published Products -->
-          <article class="card">
-
-            <div class="app-icon">🚀</div>
-
-            <h3>
-              Published Products
-            </h3>
-
-            <p>
-              My applications and games published on Google Play
-              will be listed here as they become available.
-            </p>
-
-          </article>
-
+        <div class="section-head reveal"><p class="kicker">04 / TOOLKIT</p><h2>Built for the full<br><span>gameplay stack.</span></h2></div>
+        <div class="skills-grid">
+          <article class="skill-panel reveal"><p>ENGINE & GAMEPLAY</p><h3>Unity 2D / 3D</h3><div class="skill-cloud"><span>C#</span><span>Gameplay Architecture</span><span>Physics</span><span>AI Behavior</span><span>Game State</span><span>Addressables</span><span>Mobile Optimization</span><span>Unity Profiler</span></div></article>
+          <article class="skill-panel reveal delay-1"><p>MULTIPLAYER & SERVICES</p><h3>Connected Games</h3><div class="skill-cloud"><span>Beamable</span><span>Photon</span><span>Socket.IO</span><span>REST APIs</span><span>Real-time PvP</span><span>Live Services</span><span>Docker</span><span>MongoDB</span></div></article>
+          <article class="skill-panel reveal"><p>PROGRAMMING</p><h3>Languages</h3><div class="skill-cloud"><span>C#</span><span>C++</span><span>C</span><span>Lua</span><span>Java</span><span>Python</span></div></article>
+          <article class="skill-panel reveal delay-1"><p>ENGINEERING</p><h3>Foundations</h3><div class="skill-cloud"><span>OOP</span><span>SOLID</span><span>Design Patterns</span><span>Debugging</span><span>Git</span><span>SVN</span><span>Problem Solving</span><span>Zenject</span></div></article>
         </div>
-
       </div>
-
     </section>
 
-
-    <!-- =========================
-         CONTACT SECTION
-    ========================== -->
-    <section id="contact" class="section">
-
-      <div class="container contact-box">
-
-        <div>
-
-          <p class="section-label">
-            CONTACT
-          </p>
-
-          <h2>
-            Developer Information
-          </h2>
-
-          <p class="section-copy">
-            For app support, privacy questions, business enquiries,
-            or developer communication, please use the contact
-            details below.
-          </p>
-
-        </div>
-
-
-        <div class="contact-details">
-
-          <p>
-            <strong>Developer:</strong>
-            Palash Parate
-          </p>
-
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:palashparate009@gmail.com">
-              palashparate009@gmail.com
-            </a>
-          </p>
-
-          <p>
-            <strong>Privacy:</strong>
-            <a href="privacy-policy.html">
-              View Privacy Policy
-            </a>
-          </p>
-
-        </div>
-
-      </div>
-
+    <section class="section container education">
+      <div class="section-head reveal"><p class="kicker">05 / EDUCATION</p></div>
+      <div class="education-card reveal"><div><span>2024</span><h3>B.Sc. (Honours) — Computer Science & Game Development</h3><p>BackstagePass Institute of Gaming and Technology · Hyderabad</p></div><div class="edu-badge">GAME<br>DEV</div></div>
     </section>
 
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <p class="kicker">06 / LET'S CONNECT</p>
+        <h2>Have a game worth<br><span>building?</span></h2>
+        <p>I’m open to Unity Developer opportunities where I can work on challenging gameplay, multiplayer systems and high-quality player experiences.</p>
+        <div class="contact-actions"><a class="btn primary" href="mailto:palashparate009@gmail.com">palashparate009@gmail.com →</a><a class="btn secondary" href="https://www.linkedin.com/in/palash-parate" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+    </section>
   </main>
 
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="footer">
-
-    <div class="container footer-wrap">
-
-      <p>
-        © 2026 Palash Parate. All rights reserved.
-      </p>
-
-      <a href="privacy-policy.html">
-        Privacy Policy
-      </a>
-
-    </div>
-
-  </footer>
-
+  <footer><div class="container footer-inner"><span>© <span id="year"></span> Palash Parate</span><span>Designed for gameplay, built for the web.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
