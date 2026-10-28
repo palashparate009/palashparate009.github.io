@@ -45,5 +45,12 @@ if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reducedM
     heroVisual.style.setProperty('--pointer-x', '0px');
     heroVisual.style.setProperty('--pointer-y', '0px');
   });
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('pointermove', event => {
+      const bounds = card.getBoundingClientRect();
+      card.style.setProperty('--glow-x', `${event.clientX - bounds.left}px`);
+      card.style.setProperty('--glow-y', `${event.clientY - bounds.top}px`);
+    });
+  });
 }
 document.getElementById('year').textContent = new Date().getFullYear();
